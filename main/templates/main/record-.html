@@ -1,0 +1,90 @@
+{% extends 'main.html' %}
+
+{% block content %}
+  <nav class="navbar navbar-light bg-white">
+    <div class="container-fluid my-2">
+      <strong><a class="fs-2 fw-bold text-bluedark" href="{% url 'Dashboard' %}">CareGenius</a></strong>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mb-2 mb-md-0">
+            <a href="#" class="nav-link fs-5">Contact Us</a>
+            <a href="{% url 'About' %}" class="nav-link fs-5">About Us</a>          
+            <a href="{% url 'Login' %}" class="nav-link fs-5">Login</a>            
+        </ul>
+    </div>
+    </div>
+  </nav>
+  <div class="container-fluid-care" style="max-width:600px !important;">
+    <div class="border-bottom bg-white" style="padding: 30px 40px 100px !important;border-bottom-left-radius: 2rem; border-bottom-right-radius: 2rem;">
+        <div class="text-center pb-1">
+            <div class="fw-bold fs-2">CAREGENIUS</div>
+            <span class="fs-6">FAZAM inc and Partners</span>            
+        </div>            
+        <div class="text-center pb-4">
+            <div class="fw-bold fs-2">FATIMA IBRAHIM</div>
+            <span class="fs-6">Record from 22/23</span>            
+        </div>
+        <div class="pb-3" style="text-align: justify !important;">
+            <h3 class="fw-bold">Basic Info</h3>
+            <div class="container-fluid">
+                <div>
+                    <span>W: 35kg </span>
+                    <span>H: 1.75m </span>
+                    <span>A: 25yrs</span>
+                    <span>BP: 100/50mmHg</span>    
+                </div>
+                <div>
+                    <span>Genotype: AS</span>
+                    <span>Blood Group: B+</span>
+                    <span>Blood Sugar: 4.8/RBS</span>
+                </div>
+                <div>
+                    <span>Recent Checkup: 05/23</span>
+                </div>
+            </div>
+        </div>
+        <div class="pb-3" style="text-align: justify !important;">
+            <h3 class="fw-bold">Health Status</h3>
+            <div class="container-fluid">
+                <div>
+                    <span>Symptoms: Severe Headache, Dizziness, Blurry Vision.</span>
+                </div>
+                <div>
+                    <span>Recent Checkup Result: Stable Sugar Level.</span>
+                </div>
+                <div>
+                    <span>Brief Dietary Summary: 45% Carbohydrate, 10% Protein, 20% Vitamins and Minerals, 35% Fats and Oil.</span>
+                </div>
+                <div>
+                    <span>Common illnesses: Headaches, Malaria and Typhoid Fever.</span>
+                </div>
+            </div>
+        </div>
+        <div class="pb-3" style="text-align: justify !important;">
+            <h3 class="fw-bold">Recommended Test</h3>
+            <div class="container-fluid">
+                <div>
+                    <span>RBS Random Blood Sugar Test.</span>
+                </div>
+            </div>
+        </div>        
+        <div class="pb-3" style="text-align: justify !important;">
+            <h3 class="fw-bold">CareGenius Recommendation</h3>
+            <div class="container-fluid">
+                <div>
+                    <span>Eat food that are rich in protein more than carbohydrate
+                        and drink more water. If symptoms persist, please visit a
+                        medical practitioner for further medical examination.</span>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="d-flex justify-content-around" style="padding: 50px 0px !important;">
+        <button class="btn btn-lg btn-light text-bluedark rounded-circle"><i class="bi bi-download"></i></button>
+        <button class="btn btn-lg btn-light text-bluedark rounded-circle"><i class="bi bi-arrow-left-circle-fill"></i></button>
+    </div>  
+  </div>
+
+{% endblock %}

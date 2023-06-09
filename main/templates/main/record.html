@@ -1,0 +1,163 @@
+{% extends 'main.html' %}
+
+{% block content %}
+  <nav class="navbar navbar-light bg-white">
+    <div class="container-fluid my-2">
+      <strong><a class="fs-2 fw-bold text-bluedark" href="{% url 'Dashboard' %}">CareGenius</a></strong>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mb-2 mb-md-0">
+            <a href="#" class="nav-link fs-5">Contact Us</a>
+            <a href="{% url 'About' %}" class="nav-link fs-5">About Us</a>          
+            <a href="{% url 'Login' %}" class="nav-link fs-5">Login</a>            
+        </ul>
+    </div>
+    </div>
+  </nav>
+  <div class="container-fluid-care" style="max-width:600px !important;">
+    <div class="border-bottom bg-white" style="padding: 50px 0px 100px !important;border-bottom-left-radius: 2rem; border-bottom-right-radius: 2rem;">
+        <div class="container-fluid pb-5">
+            <div class="py-2 border-bottom">
+                <div class="row">
+                    <div class="col-5">
+                        <span><i class="bi bi-pencil-fill"></i></span>
+                    </div>
+                    <div class="col-4">
+                        <span class="text-secondary">Date</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 text-start">
+                        <div class="card" style="border: 0px;">
+                            <span class="fs-5"><a href="{% url 'RecordView' %}">Record1</a></span>
+                        </div>             
+                    </div>
+                    <div class="col-3">
+                        <span class="fs-5">02/23</span>
+                    </div>
+                    <div class="col-4 text-end text-bluedark">
+                        <span><i class="bi bi-trash-fill"></i></span>
+                        <span><i class="bi bi-download"></i></span>
+                        <span><i class="bi bi-eye-fill"></i></span>
+                        <span><i class="bi bi-arrow-clockwise"></i></span>                                                
+                    </div>
+                </div>
+            </div>
+            <div class="py-2 border-bottom">
+                <div class="row">
+                    <div class="col-5">
+                        <span><i class="bi bi-pencil-fill"></i></span>
+                    </div>
+                    <div class="col-4">
+                        <span class="text-secondary">Date</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 text-start">
+                        <div class="card" style="border: 0px;">
+                            <span class="fs-5"><a href="{% url 'RecordView' %}">Record1</a></span>
+                        </div>             
+                    </div>
+                    <div class="col-3">
+                        <span class="fs-5">02/23</span>
+                    </div>
+                    <div class="col-4 text-end text-bluedark">
+                        <span><i class="bi bi-trash-fill"></i></span>
+                        <span><i class="bi bi-download"></i></span>
+                        <span><i class="bi bi-eye-fill"></i></span>
+                        <span><i class="bi bi-arrow-clockwise"></i></span>                                                
+                    </div>
+                </div>
+            </div>
+            <div class="py-2 border-bottom">
+                <div class="row">
+                    <div class="col-5">
+                        <span><i class="bi bi-pencil-fill"></i></span>
+                    </div>
+                    <div class="col-4">
+                        <span class="text-secondary">Date</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 text-start">
+                        <div class="card" style="border: 0px;">
+                            <span class="fs-5"><a href="{% url 'RecordView' %}">Record1</a></span>
+                        </div>             
+                    </div>
+                    <div class="col-3">
+                        <span class="fs-5">02/23</span>
+                    </div>
+                    <div class="col-4 text-end text-bluedark">
+                        <span><i class="bi bi-trash-fill"></i></span>
+                        <span><i class="bi bi-download"></i></span>
+                        <span><i class="bi bi-eye-fill"></i></span>
+                        <span><i class="bi bi-arrow-clockwise"></i></span>                                                
+                    </div>
+                </div>
+            </div>                        
+            <div class="py-2 border-bottom">
+                <div class="row">
+                    <div class="col-5">
+                        <span><i class="bi bi-pencil-fill"></i></span>
+                    </div>
+                    <div class="col-4">
+                        <span class="text-secondary">Date</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 text-start">
+                        <div class="card" style="border: 0px;">
+                            <span class="fs-5"><a href="{% url 'RecordView' %}">Record1</a></span>
+                        </div>             
+                    </div>
+                    <div class="col-3">
+                        <span class="fs-5">02/23</span>
+                    </div>
+                    <div class="col-4 text-end text-bluedark">
+                        <span><i class="bi bi-trash-fill"></i></span>
+                        <span><i class="bi bi-download"></i></span>
+                        <span><i class="bi bi-eye-fill"></i></span>
+                        <span><i class="bi bi-arrow-clockwise"></i></span>                                                
+                    </div>
+                </div>
+            </div>
+            <div class="py-2 border-bottom">
+                <div class="row">
+                    <div class="col-5">
+                        <span><i class="bi bi-pencil-fill"></i></span>
+                    </div>
+                    <div class="col-4">
+                        <span class="text-secondary">Date</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 text-start">
+                        <div class="card" style="border: 0px;">
+                            <span class="fs-5"><a href="{% url 'RecordView' %}">Record1</a></span>
+                        </div>             
+                    </div>
+                    <div class="col-3">
+                        <span class="fs-5">02/23</span>
+                    </div>
+                    <div class="col-4 text-end text-bluedark">
+                        <span><i class="bi bi-trash-fill"></i></span>
+                        <span><i class="bi bi-download"></i></span>
+                        <span><i class="bi bi-eye-fill"></i></span>
+                        <span><i class="bi bi-arrow-clockwise"></i></span>                                                
+                    </div>
+                </div>
+            </div>            
+        </div>            
+    </div>
+    <div class="text-center" style="padding: 50px 0px !important;">
+      <form action="" method="post">
+        <div class="px-5">
+          <button type="submit" class="btn btn-lg w-100 btn-light p-3 rounded-5 text-bluedark fw-bold">Clear Records</button>
+        </div>
+      </form>    
+    </div>  
+  </div>
+
+{% endblock %}

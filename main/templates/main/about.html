@@ -1,0 +1,47 @@
+{% extends 'main.html' %}
+
+{% block content %}
+  <div class="bg-white">
+    <nav class="navbar navbar-light bg-white">
+      <div class="container-fluid my-2">
+        <strong><a class="fs-2 fw-bold text-bluedark" href="{% url 'Dashboard' %}">CareGenius</a></strong>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mb-2 mb-md-0">
+            <a href="#" class="nav-link fs-5">Contact Us</a>
+            <a href="{% url 'About' %}" class="nav-link fs-5">About Us</a>          
+            <a href="{% url 'Login' %}" class="nav-link fs-5">Login</a>            
+          </ul>
+      </div>
+      </div>
+    </nav>
+    <div class="container-fluid-care" style="max-width:600px !important;">
+      <div class="container-fluid bg-white px-5">
+          <div class="pb-4">
+            <div class="fs-5 fw-bold">FAZAM inc and Partners</div>            
+            <p class="fs-6">A startup founded in 2023</p>
+          </div>      
+          <div class="pb-4">
+            <div class="fs-3">Partners</div>
+            <p class="fs-6">Partners</p>
+          </div>
+          <div class="pb-4">
+            <div class="fs-3">Licence</div>
+            <p class="fs-6">Licence</p>
+          </div>
+          <div class="pb-4">
+            <div class="fs-3">Contact Us</div>
+            <p class="fs-6">FAZAM Inc</p>
+          </div>
+          <div class="text-center bg-white py-5">
+            <button class="btn btn-lg bg-bluedark px-3 rounded-circle"><i class="bi bi-arrow-left-circle-fill"></i></button>
+          </div>  
+
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+

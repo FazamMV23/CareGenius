@@ -1,0 +1,136 @@
+{% extends 'main.html' %}
+
+{% block content %}
+  <nav class="navbar navbar-light fixed-top bg-white">
+    <div class="container-fluid my-2">
+      <strong><a class="fs-2 fw-bold text-bluedark" href="{% url 'Dashboard' %}">CareGenius</a></strong>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mb-2 mb-md-0">
+          <a href="#" class="nav-link fs-5">Contact Us</a>
+          <a href="{% url 'About' %}" class="nav-link fs-5">About Us</a>          
+          <a href="{% url 'Login' %}" class="nav-link fs-5">Login</a>          
+        </ul>
+    </div>
+    </div>
+  </nav>
+  <div class="container-fluid-care" style="max-width:600px !important;">
+    <div class="container-fluid border-bottom rounded-5 bg-white pt-5" style="padding-top: 120px !important;">
+      <div class="text-center">
+          <div class="box">
+            <img src="../static/assets/img/image1.jpg" alt="" height="150px" width="150px" class="rounded-circle">
+            <p class="text-center"><i class="bi bi-camera-fill"></i></p>
+          </div>
+        <div class="py-2">
+          <span class="fw-bold fs-4">FATIMA MADORI <a href="#"><i class="bi bi-pencil-fill"></i></a></span>
+        </div>
+      </div>
+      <div class="pb-3">
+        <div class="fs-1 fw-bold d-flex justify-content-between">
+          <p>Basic Info</p>
+          <a class="navbar-toggler pt-1" data-bs-toggle="collapse" data-bs-target="#basic-info" aria-controls="basic-info" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="bi bi-plus"></i></span>
+          </a>
+        </div>
+        <div class="collapse" id="basic-info">
+          <div class="container-fluid">
+            <div class="d-flex justify-content-center text-center pb-3">
+              <div class="container me-4 border border-secondary rounded-4">
+                <p class="text-secondary pt-1 text-wrap">Weight</p>
+                <p class="fw-bold fs-5">35</p>
+              </div>
+              <div class="container me-4 border border-secondary rounded-4">
+                <p class="text-secondary pt-1">Height</p>
+                <p class="fw-bold fs-5">1.75</p>
+              </div>
+              <div class="container me-4 border border-secondary rounded-4">
+                <p class="text-secondary pt-1">Age</p>
+                <p class="fw-bold fs-5">25</p>
+              </div>
+              <div class="container border border-secondary rounded-4">
+                <p class="text-secondary pt-1">BP</p>
+                <p class="fw-bold fs-5">100/50</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold">Genotype/Blood Group</p>
+              <p>AS/B+</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold">Family History</p>
+              <p>Diabetes/Heart Attack</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold">Recent Checkup</p>
+              <p>05/23</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold">Blood Sugar Level</p>
+              <p>FBS/RBS</p>
+            </div>
+
+          </div> 
+        </div>
+
+        <div class="fs-1 fw-bold d-flex justify-content-between">
+          <p>Health Status</p>
+          <a class="navbar-toggler pt-1" data-bs-toggle="collapse" data-bs-target="#health-status" aria-controls="health-status" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="bi bi-plus"></i></span>
+          </a>
+        </div>
+        <div class="collapse" id="health-status">
+          <div class="">
+            <div class="d-flex justify-content-between pb-3">
+              <div class="container-fluid">
+                <p>Symptoms</p>
+                <div class="card rounded-4">
+                  <div class="card-body text-secondary">
+                    <p>Symptoms</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <p>Recent Checkup</p>
+                <div class="card rounded-4">
+                  <div class="card-body text-secondary">
+                    <p>Recent Checkup Details</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between pb-3">
+              <div class="container-fluid">
+                <p>Common illness</p>
+                <div class="card rounded-4">
+                  <div class="card-body text-secondary">
+                    <p>Common illness</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <p>Food Intake</p>
+                <div class="card rounded-4">
+                  <div class="card-body text-secondary">
+                    <p>Food</p>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div> 
+        </div>
+        <div class="fs-1 fw-bold d-flex justify-content-between">
+          <p><a href="{% url 'Record' %}">Record</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center pb-3" style="padding: 50px 0px !important;">
+      <form action="" method="post">
+        <div class="px-5">
+          <button type="submit" class="btn btn-lg w-100 btn-light p-3 rounded-5 text-bluedark fw-bold">Delete Account</button>
+        </div>
+      </form>    
+    </div>  
+  </div>
+{% endblock %}
